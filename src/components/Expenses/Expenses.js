@@ -2,7 +2,8 @@
 
 import Expendi from './Expendi';
 // import Card from '../UI/Card';
-// // import './Expenses.css';
+import './Expenses.css';
+import ExpensesChart from './ExpensesChart';
 
 // const Expenses = (props) => {
 //   return (
@@ -66,6 +67,7 @@ const Expenses = (props) => {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
+        <ExpensesChart expenses={filtered}/>
         {filtered.length===0 ? (<p>no expenses</p>):
         (
         filtered.map((expense) => (

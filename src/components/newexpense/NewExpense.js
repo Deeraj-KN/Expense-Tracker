@@ -13,8 +13,6 @@ const Saveda=(entered)=>{
     // console.log(expenseData)
     props.onAdd(expenseData);
 };
-
-
     return <div className='expense'>
         <ExpenseForm onSave={Saveda}/>
     </div>

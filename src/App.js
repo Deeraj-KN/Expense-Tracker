@@ -38,7 +38,7 @@ function App() {
   }
   return (
     <Card className="App">
-      <h1>ghgufvy</h1>
+      <h1>EXPENSE TRACKER</h1>
       <NewExpense onAdd={addexpenseHandler}/>
       <Expenses items={expenses} />
       {/* <Expendi title={expenses[0].title} 
